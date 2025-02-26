@@ -1,5 +1,18 @@
 Title:
-<MY SUPER AWESOME PROJECT TITLE>
+Defending Against Jailbreaks Using Reinforcement Learning
 
 Abstract:
-<MY SUPER AWESOME PROJECT ABSTRACT>
+Large language models (LLMs) are vulnerable to jailbreak attacks, where
+carefully crafted prompts bypass safety filters and achieve harmful responses
+from the model. A popular and effective defense against these attacks is
+Llama Guard, which uses an LLM fine-tuned with a dataset of jailbreak prompts
+to detect and prevent future jailbreaks. Our approach attempts to improve
+on Llama Guard through Guided Reward Policy Optimization (GRPO) to fine-
+tune a lightweight LLaMA-3.1-3B model for reasoning-based jailbreak detec-
+tion and defense. GRPO uses Reinforcement Learning with reward functions
+that encourage longer chains of reasoning as well as correct identification of
+jailbreak attempts. To evaluate the effectiveness of our fine-tuned model, we
+test it against the PAIR algorithm, a state-of-the-art iterative jailbreak attack
+method that uses an adversarial LLM. We compare our GRPO-trained model’s
+performance against existing defenses (e.g. Llama Guard), assessing its abil-
+ity to prevent jailbreaks across different attack strategies.
